@@ -3,16 +3,21 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { TopheadlineComponent } from './topheadline/topheadline.component';
+import {HttpClientModule } from '@angular/common/http';
+import {SerieanewsapiService} from './service/serieanewsapi.service'
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TopheadlineComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [SerieanewsapiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
