@@ -5,12 +5,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TopheadlineComponent } from './topheadline/topheadline.component';
 import {HttpClientModule } from '@angular/common/http';
-import {SerieanewsapiService} from './service/serieanewsapi.service'
+import {SerieanewsapiService} from './service/serieanewsapi.service';
+import { TechComponent } from './tech/tech.component';
+import { BusinessComponent } from './business/business.component'
 
 @NgModule({
   declarations: [
     AppComponent,
-    TopheadlineComponent
+    TopheadlineComponent,
+    TechComponent,
+    BusinessComponent
   ],
   imports: [
     BrowserModule,
